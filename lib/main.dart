@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login/loginPage.dart';
 
 void main() {
-  runApp(myApp());
+  runApp(const MyApp());
 }
 
 var assetsImage = AssetImage("assets/xpertLoginBackground.jpg");
@@ -13,8 +13,8 @@ var image = Image(
   height: double.infinity,
 );
 
-class myApp extends StatelessWidget {
-  const myApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

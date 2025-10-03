@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login/Homepage.dart';
-import 'package:login/loginPage.dart';
+import 'package:login/dashbord_page.dart';
 import 'main.dart';
 
 class Loginpage extends StatelessWidget {
@@ -128,7 +127,7 @@ class Loginpage extends StatelessWidget {
                                 String password = _passwordController.text.trim();
                                 if(username == "admin" && password=="123456"){
                                   Navigator.push(
-                                    context, MaterialPageRoute(builder: (context)=>Homepage(),
+                                    context, MaterialPageRoute(builder: (context)=>const DashboardPage(),
                                     ),
                                     );
                                     
