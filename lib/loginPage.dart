@@ -43,10 +43,18 @@ class Loginpage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image(
-                              image: NetworkImage("https://thumbs.dreamstime.com/z/x-green-alphabet-letter-icon-logo-creative-design-business-company-240442313.jpg?ct=jpeg"),
+                            Container(
                               height: 50,
                               width: 50,
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 3, 173, 91),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Icon(
+                                Icons.check_circle,
+                                color: Colors.white,
+                                size: 30,
+                              ),
                             ),
                             SizedBox(width: 10),
                             Text.rich(
@@ -127,7 +135,7 @@ class Loginpage extends StatelessWidget {
                                 String password = _passwordController.text.trim();
                                 if(username == "admin" && password=="123456"){
                                   Navigator.push(
-                                    context, MaterialPageRoute(builder: (context)=>const DashboardPage(),
+                                    context, MaterialPageRoute(builder: (context)=>DashboardPage(),
                                     ),
                                     );
                                     

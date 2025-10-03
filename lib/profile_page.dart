@@ -16,7 +16,7 @@ class ProfilePage extends StatelessWidget {
           onPressed: () {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const DashboardPage()),
+              MaterialPageRoute(builder: (context) => DashboardPage()),
             );
           },
         ),
