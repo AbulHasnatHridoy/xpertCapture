@@ -16,7 +16,7 @@ class VisitsPage extends StatelessWidget {
           onPressed: () {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => DashboardPage()),
+              MaterialPageRoute(builder: (context) => DashbordPage()),
             );
           },
         ),

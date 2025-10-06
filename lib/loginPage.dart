@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login/dashbord_page.dart';
 import 'main.dart';
+import "package:login/dashbord_page.dart";
 
 class Loginpage extends StatelessWidget {
    Loginpage({super.key});
@@ -135,7 +135,7 @@ class Loginpage extends StatelessWidget {
                                 String password = _passwordController.text.trim();
                                 if(username == "admin" && password=="123456"){
                                   Navigator.push(
-                                    context, MaterialPageRoute(builder: (context)=>DashboardPage(),
+                                    context, MaterialPageRoute(builder: (context)=>DashbordPage(),
                                     ),
                                     );
                                     
