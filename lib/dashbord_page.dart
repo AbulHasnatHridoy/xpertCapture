@@ -89,6 +89,7 @@ class _DashbordPageState extends State<DashbordPage> {
                 Text(title,style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),)
               ],
             ),
